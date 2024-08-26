@@ -1,0 +1,101 @@
+/* WebsiteSamples.css */
+body{
+ 
+  background-color: black;
+}
+
+.website-samples {
+
+  margin-top: 30px;
+    text-align: center;
+    padding: 2rem;
+   background-color: #d09115;
+    color: white;
+  }
+  
+  .website-samples h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .website-samples h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .samples-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .sample-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .sample-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .sample-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .sample-info {
+    padding: 1rem;
+  }
+  
+  .sample-info h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sample-info p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .view-sample-button {
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .view-sample-button:hover {
+    background-color: white;
+    color: #ff7e5f;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .website-samples h2 {
+      font-size: 2rem;
+    }
+  
+    .website-samples h3 {
+      font-size: 1.25rem;
+    }
+  
+    .sample-info h4 {
+      font-size: 1.1rem;
+    }
+  
+    .sample-info p {
+      font-size: 0.9rem;
+    }
+  
+    .view-sample-button {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+  

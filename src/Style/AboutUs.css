@@ -1,0 +1,84 @@
+/* AboutUs.css */
+
+.a h1{
+  color: azure;
+  
+}
+.pricing-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #090707;
+}
+
+.pricing-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+.pricing-card .price {
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+}
+
+.pricing-card .saving {
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.pricing-card .features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.pricing-card .features li {
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  background-color: #f09708;
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.cta-button:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.trial-note {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.additional-info {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pricing-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
